@@ -1,0 +1,47 @@
+<!--
+    carousel example
+    mapbox studio example
+    arcgis online example
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Route Drawing Tool</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="lib/leaflet.css">
+    
+</head>
+<body>
+    <div id="map">
+        <div id="buttons">
+            <h2>Route Drawing Tool</h2>
+            <button class="map-button" id="draw">New Line</button>
+            <button class="map-button" id="upload-stops">Upload Stops</button>
+            <button class="map-button" id="upload-route">Upload Route</button>
+            <button class="map-button" id="export-route" disabled>Export Route</button>
+        </div>
+    </div>
+
+    <div id="stop-upload-form"  class="upload">
+        <form>
+            <label for="stop-input">Choose a file:</label>
+            <input type="file" id="stop-input" name="file" accept=".geojson" required>
+        </form>
+        <button id="close-stop-upload">Close</button>
+    </div>
+    <div id="route-upload-form"  class="upload">
+        <form>
+            <label for="route-input">Choose a file:</label>
+            <input type="file" id="route-input" name="file" accept=".geojson" required>
+        </form>
+        <button id="close-route-upload">Close</button>
+    </div>
+
+<script type="text/javascript" src="lib/leaflet.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+
+</body>
+</html>

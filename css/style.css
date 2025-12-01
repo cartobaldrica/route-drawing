@@ -1,0 +1,37 @@
+#map{
+    width:100vw;
+    height:100vh;
+    background-color:#dbecd4;
+}
+#buttons{
+    z-index:100000;
+    position:absolute;
+    right:30px;
+    top:10px;
+    background:white;
+    padding:10px;
+    border:2px solid black;
+}
+#buttons h2{
+    margin-top:5px;
+}
+.upload{
+    width:200px;
+    display:none;
+    position:absolute;
+    top:50%;
+    left:calc(50% - 125px);
+    padding:25px;
+    border:black 2px solid;
+    background:white;
+    z-index:100000;
+}
+#popup p {
+    margin:0;
+    margin-top:10px;
+    font-size:16px;
+}
+#popup button {
+    margin-right:10px;
+    margin-top:10px;
+}
