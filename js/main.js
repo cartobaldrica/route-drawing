@@ -93,6 +93,7 @@
     //activate drawing mode
     document.querySelector("#draw").addEventListener("click",function(){
         draw = true;
+        document.querySelector("#buttons").insertAdjacentHTML("beforeend","<p id='how-to-line'>Click to Add Points</br>Double Click to close line.</p>")
         document.querySelector("#map").style.cursor = "pointer";
     })
     //map listeners
@@ -118,6 +119,7 @@
         if (polyline){
             polyline.remove(map);
             polyline = null;
+            document.querySelector("#how-to-line").remove();
         }
         lineSegments.push(latlng);
         //aggregate latlngs into full line
