@@ -1,2 +1,4 @@
-# lroute-drawing
+# [Route Drawing](https://cartobaldrica.github.io/route-drawing/)
+
+A simple tool for create walking tour geojson files. Designed to be used with [web-walking-tour](https://github.com/cartobaldrica/web-walking-tour).
 
